@@ -17,6 +17,9 @@ importers:
       '@types/node':
         specifier: ^25.3.0
         version: 25.3.0
+      c12:
+        specifier: 4.0.0-beta.3
+        version: 4.0.0-beta.3(jiti@2.6.1)
       eslint:
         specifier: ^10.0.1
         version: 10.0.1(jiti@2.6.1)
@@ -889,6 +892,26 @@ packages:
     resolution: {integrity: sha512-bkXY9WsVpY7CvMhKSR6pZilZu9Ln5WDrKVBUXf2S443etkmEO4V58heTecXcUIsNsi4Rx8JUO4NfX1IcQl4deg==}
     engines: {node: '>=18.20'}
 
+  c12@4.0.0-beta.3:
+    resolution: {integrity: sha512-15pHxeM4kKKnF1zPgvXq/ETPhf9DRLGg0Id3GAyQhQqYxt8WkUCbo0NipHjQUUNC5VPP8TQA32pGPDUZmAi/3g==}
+    peerDependencies:
+      chokidar: ^5
+      dotenv: '*'
+      giget: '*'
+      jiti: '*'
+      magicast: '*'
+    peerDependenciesMeta:
+      chokidar:
+        optional: true
+      dotenv:
+        optional: true
+      giget:
+        optional: true
+      jiti:
+        optional: true
+      magicast:
+        optional: true
+
   cac@6.7.14:
     resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
     engines: {node: '>=8'}
@@ -979,6 +1002,9 @@ packages:
   dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
+
+  destr@2.0.5:
+    resolution: {integrity: sha512-ugFTXCtDZunbzasqBxrK93Ik/DRYsO6S/fedkWEMKqt04xZ4csmnmwGDBAb07QWNaGMAmnTIemsYZCksjATwsA==}
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
@@ -1727,6 +1753,9 @@ packages:
 
   quansync@1.0.0:
     resolution: {integrity: sha512-5xZacEEufv3HSTPQuchrvV6soaiACMFnq1H8wkVioctoH3TRha9Sz66lOxRwPK/qZj7HPiSveih9yAyh98gvqA==}
+
+  rc9@3.0.0:
+    resolution: {integrity: sha512-MGOue0VqscKWQ104udASX/3GYDcKyPI4j4F8gu/jHHzglpmy9a/anZK3PNe8ug6aZFl+9GxLtdhe3kVZuMaQbA==}
 
   refa@0.12.1:
     resolution: {integrity: sha512-J8rn6v4DBb2nnFqkqwy6/NnTYMcgLA+sLr0iIO41qpv0n+ngb7ksag2tMRl0inb1bbO/esUwzW1vbJi7K0sI0g==}
@@ -2844,6 +2873,17 @@ snapshots:
 
   builtin-modules@5.0.0: {}
 
+  c12@4.0.0-beta.3(jiti@2.6.1):
+    dependencies:
+      confbox: 0.2.4
+      defu: 6.1.4
+      exsolve: 1.0.8
+      pathe: 2.0.3
+      pkg-types: 2.3.0
+      rc9: 3.0.0
+    optionalDependencies:
+      jiti: 2.6.1
+
   cac@6.7.14: {}
 
   caniuse-lite@1.0.30001772: {}
@@ -2908,6 +2948,8 @@ snapshots:
   defu@6.1.4: {}
 
   dequal@2.0.3: {}
+
+  destr@2.0.5: {}
 
   devlop@1.1.0:
     dependencies:
@@ -3877,6 +3919,11 @@ snapshots:
   quansync@0.2.11: {}
 
   quansync@1.0.0: {}
+
+  rc9@3.0.0:
+    dependencies:
+      defu: 6.1.4
+      destr: 2.0.5
 
   refa@0.12.1:
     dependencies:
